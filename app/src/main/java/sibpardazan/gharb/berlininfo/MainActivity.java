@@ -1,77 +1,109 @@
 package sibpardazan.gharb.berlininfo;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import com.google.android.material.snackbar.Snackbar;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.view.View;
 
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
-import sibpardazan.gharb.berlininfo.databinding.ActivityMainBinding;
-
-import android.view.Menu;
-import android.view.MenuItem;
+import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.card.MaterialCardView;
 
 public class MainActivity extends AppCompatActivity {
-
-    private AppBarConfiguration appBarConfiguration;
-    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        MaterialToolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle(R.string.main_title);
+        setSupportActionBar(toolbar);
 
-        setSupportActionBar(binding.toolbar);
+        setupCardListeners();
+    }
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+    private void setupCardListeners() {
+        MaterialCardView cardBrandenburgGate = findViewById(R.id.card_brandenburg_gate);
+        MaterialCardView cardBerlinWall = findViewById(R.id.card_berlin_wall);
+        MaterialCardView cardReichstag = findViewById(R.id.card_reichstag);
+        MaterialCardView cardMuseumIsland = findViewById(R.id.card_museum_island);
+        MaterialCardView cardCharlottenburgPalace = findViewById(R.id.card_charlottenburg_palace);
+        MaterialCardView cardBerlinCathedral = findViewById(R.id.card_berlin_cathedral);
+        MaterialCardView cardAlexanderplatz = findViewById(R.id.card_alexanderplatz);
+        MaterialCardView cardPotzdamerPlatz = findViewById(R.id.card_potzdamer_platz);
+        MaterialCardView cardCheckpointCharlie = findViewById(R.id.card_checkpoint_charlie);
+        MaterialCardView cardBerlinZoo = findViewById(R.id.card_berlin_zoo);
 
-        binding.fab.setOnClickListener(new View.OnClickListener() {
+        cardBrandenburgGate.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAnchorView(R.id.fab)
-                        .setAction("Action", null).show();
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, BrandenburgGateActivity.class));
             }
         });
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+        cardBerlinWall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, BerlinWallActivity.class));
+            }
+        });
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        cardReichstag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ReichstagActivity.class));
+            }
+        });
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        cardMuseumIsland.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MuseumIslandActivity.class));
+            }
+        });
 
-        return super.onOptionsItemSelected(item);
-    }
+        cardCharlottenburgPalace.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CharlottenburgPalaceActivity.class));
+            }
+        });
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        return NavigationUI.navigateUp(navController, appBarConfiguration)
-                || super.onSupportNavigateUp();
+        cardBerlinCathedral.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, BerlinCathedralActivity.class));
+            }
+        });
+
+        cardAlexanderplatz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AlexanderplatzActivity.class));
+            }
+        });
+
+        cardPotzdamerPlatz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, PotzdamerPlatzActivity.class));
+            }
+        });
+
+        cardCheckpointCharlie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CheckpointCharlieActivity.class));
+            }
+        });
+
+        cardBerlinZoo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, BerlinZooActivity.class));
+            }
+        });
     }
 }
