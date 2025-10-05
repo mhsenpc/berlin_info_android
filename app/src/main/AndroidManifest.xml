@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -21,126 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".BrandenburgGateActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".BerlinWallActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".ReichstagActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".MuseumIslandActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".CharlottenburgPalaceActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".BerlinCathedralActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".AlexanderplatzActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".PotzdamerPlatzActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".CheckpointCharlieActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".BerlinZooActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".TvTowerActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".HolocaustMemorialActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".UnterDenLindenActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".KaiserWilhelmChurchActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".GropiusBauActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".TempelhofAirportActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".HackescherMarktActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".SpandauCitadelActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".TreptowerParkActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
-
-        <activity
-            android:name=".EastSideGalleryActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.BerlinInfo" />
 
         <activity
             android:name=".AboutActivity"

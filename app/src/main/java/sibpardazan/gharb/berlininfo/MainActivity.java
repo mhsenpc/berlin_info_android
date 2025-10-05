@@ -4,15 +4,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager2.widget.ViewPager2;
 
 import com.google.android.material.appbar.MaterialToolbar;
-import com.google.android.material.card.MaterialCardView;
+import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity {
+
+    private ViewPager2 viewPager;
+    private MaterialButton btnPrevious, btnNext;
+    private TextView tvPlaceCounter;
+    private PlacePagerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +29,56 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setTitle(R.string.main_title);
         setSupportActionBar(toolbar);
 
-        setupCardListeners();
+        viewPager = findViewById(R.id.viewpager);
+        btnPrevious = findViewById(R.id.btn_previous);
+        btnNext = findViewById(R.id.btn_next);
+        tvPlaceCounter = findViewById(R.id.tv_place_counter);
+
+        setupViewPager();
+        setupNavigationButtons();
+        updatePlaceCounter(0);
+    }
+
+    private void setupViewPager() {
+        adapter = new PlacePagerAdapter(this);
+        viewPager.setAdapter(adapter);
+
+        android.util.Log.d("MainActivity", "ViewPager setup complete. Total places: " + adapter.getItemCount());
+
+        viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                android.util.Log.d("MainActivity", "Page selected: " + position);
+                updatePlaceCounter(position);
+                updateNavigationButtons(position);
+            }
+        });
+    }
+
+    private void setupNavigationButtons() {
+        btnPrevious.setOnClickListener(v -> {
+            int currentItem = viewPager.getCurrentItem();
+            if (currentItem > 0) {
+                viewPager.setCurrentItem(currentItem - 1);
+            }
+        });
+
+        btnNext.setOnClickListener(v -> {
+            int currentItem = viewPager.getCurrentItem();
+            if (currentItem < adapter.getItemCount() - 1) {
+                viewPager.setCurrentItem(currentItem + 1);
+            }
+        });
+    }
+
+    private void updatePlaceCounter(int position) {
+        tvPlaceCounter.setText((position + 1) + " / " + adapter.getItemCount());
+    }
+
+    private void updateNavigationButtons(int position) {
+        btnPrevious.setEnabled(position > 0);
+        btnNext.setEnabled(position < adapter.getItemCount() - 1);
     }
 
     @Override
@@ -39,169 +94,5 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    private void setupCardListeners() {
-        MaterialCardView cardBrandenburgGate = findViewById(R.id.card_brandenburg_gate);
-        MaterialCardView cardBerlinWall = findViewById(R.id.card_berlin_wall);
-        MaterialCardView cardReichstag = findViewById(R.id.card_reichstag);
-        MaterialCardView cardMuseumIsland = findViewById(R.id.card_museum_island);
-        MaterialCardView cardCharlottenburgPalace = findViewById(R.id.card_charlottenburg_palace);
-        MaterialCardView cardBerlinCathedral = findViewById(R.id.card_berlin_cathedral);
-        MaterialCardView cardAlexanderplatz = findViewById(R.id.card_alexanderplatz);
-        MaterialCardView cardPotzdamerPlatz = findViewById(R.id.card_potzdamer_platz);
-        MaterialCardView cardCheckpointCharlie = findViewById(R.id.card_checkpoint_charlie);
-        MaterialCardView cardBerlinZoo = findViewById(R.id.card_berlin_zoo);
-
-        MaterialCardView cardTvTower = findViewById(R.id.card_tv_tower);
-        MaterialCardView cardHolocaustMemorial = findViewById(R.id.card_holocaust_memorial);
-        MaterialCardView cardUnterDenLinden = findViewById(R.id.card_unter_den_linden);
-        MaterialCardView cardKaiserWilhelmChurch = findViewById(R.id.card_kaiser_wilhelm_church);
-        MaterialCardView cardGropiusBau = findViewById(R.id.card_gropius_bau);
-        MaterialCardView cardTempelhofAirport = findViewById(R.id.card_tempelhof_airport);
-        MaterialCardView cardHackescherMarkt = findViewById(R.id.card_hackescher_markt);
-        MaterialCardView cardSpandauCitadel = findViewById(R.id.card_spandau_citadel);
-        MaterialCardView cardTreptowerPark = findViewById(R.id.card_treptower_park);
-        MaterialCardView cardEastSideGallery = findViewById(R.id.card_east_side_gallery);
-
-        cardBrandenburgGate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, BrandenburgGateActivity.class));
-            }
-        });
-
-        cardBerlinWall.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, BerlinWallActivity.class));
-            }
-        });
-
-        cardReichstag.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ReichstagActivity.class));
-            }
-        });
-
-        cardMuseumIsland.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MuseumIslandActivity.class));
-            }
-        });
-
-        cardCharlottenburgPalace.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, CharlottenburgPalaceActivity.class));
-            }
-        });
-
-        cardBerlinCathedral.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, BerlinCathedralActivity.class));
-            }
-        });
-
-        cardAlexanderplatz.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, AlexanderplatzActivity.class));
-            }
-        });
-
-        cardPotzdamerPlatz.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, PotzdamerPlatzActivity.class));
-            }
-        });
-
-        cardCheckpointCharlie.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, CheckpointCharlieActivity.class));
-            }
-        });
-
-        cardBerlinZoo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, BerlinZooActivity.class));
-            }
-        });
-
-        cardTvTower.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, TvTowerActivity.class));
-            }
-        });
-
-        cardHolocaustMemorial.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, HolocaustMemorialActivity.class));
-            }
-        });
-
-        cardUnterDenLinden.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, UnterDenLindenActivity.class));
-            }
-        });
-
-        cardKaiserWilhelmChurch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, KaiserWilhelmChurchActivity.class));
-            }
-        });
-
-        cardGropiusBau.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, GropiusBauActivity.class));
-            }
-        });
-
-        cardTempelhofAirport.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, TempelhofAirportActivity.class));
-            }
-        });
-
-        cardHackescherMarkt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, HackescherMarktActivity.class));
-            }
-        });
-
-        cardSpandauCitadel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, SpandauCitadelActivity.class));
-            }
-        });
-
-        cardTreptowerPark.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, TreptowerParkActivity.class));
-            }
-        });
-
-        cardEastSideGallery.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, EastSideGalleryActivity.class));
-            }
-        });
     }
 }
