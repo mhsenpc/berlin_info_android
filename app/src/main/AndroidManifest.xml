@@ -142,6 +142,12 @@
             android:parentActivityName=".MainActivity"
             android:theme="@style/Theme.BerlinInfo" />
 
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.BerlinInfo" />
+
     </application>
 
 </manifest>
