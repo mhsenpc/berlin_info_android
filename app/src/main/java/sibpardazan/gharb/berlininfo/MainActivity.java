@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
 
     private ViewPager2 viewPager;
     private MaterialButton btnPrevious, btnNext;
-    private TextView tvPlaceCounter;
     private PlacePagerAdapter adapter;
 
     @Override
@@ -32,11 +31,9 @@ public class MainActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewpager);
         btnPrevious = findViewById(R.id.btn_previous);
         btnNext = findViewById(R.id.btn_next);
-        tvPlaceCounter = findViewById(R.id.tv_place_counter);
 
         setupViewPager();
         setupNavigationButtons();
-        updatePlaceCounter(0);
     }
 
     private void setupViewPager() {
@@ -50,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
             public void onPageSelected(int position) {
                 super.onPageSelected(position);
                 android.util.Log.d("MainActivity", "Page selected: " + position);
-                updatePlaceCounter(position);
                 updateNavigationButtons(position);
             }
         });
@@ -70,10 +66,6 @@ public class MainActivity extends AppCompatActivity {
                 viewPager.setCurrentItem(currentItem + 1);
             }
         });
-    }
-
-    private void updatePlaceCounter(int position) {
-        tvPlaceCounter.setText((position + 1) + " / " + adapter.getItemCount());
     }
 
     private void updateNavigationButtons(int position) {
