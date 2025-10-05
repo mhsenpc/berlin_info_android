@@ -82,6 +82,66 @@
             android:parentActivityName=".MainActivity"
             android:theme="@style/Theme.BerlinInfo" />
 
+        <activity
+            android:name=".TvTowerActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.BerlinInfo" />
+
+        <activity
+            android:name=".HolocaustMemorialActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.BerlinInfo" />
+
+        <activity
+            android:name=".UnterDenLindenActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.BerlinInfo" />
+
+        <activity
+            android:name=".KaiserWilhelmChurchActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.BerlinInfo" />
+
+        <activity
+            android:name=".GropiusBauActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.BerlinInfo" />
+
+        <activity
+            android:name=".TempelhofAirportActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.BerlinInfo" />
+
+        <activity
+            android:name=".HackescherMarktActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.BerlinInfo" />
+
+        <activity
+            android:name=".SpandauCitadelActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.BerlinInfo" />
+
+        <activity
+            android:name=".TreptowerParkActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.BerlinInfo" />
+
+        <activity
+            android:name=".EastSideGalleryActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.BerlinInfo" />
+
     </application>
 
 </manifest>

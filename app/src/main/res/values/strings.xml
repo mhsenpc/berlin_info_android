@@ -19,6 +19,18 @@
     <string name="checkpoint_charlie">پاسگاه چارلی</string>
     <string name="berlin_zoo">باغ وحش برلین</string>
 
+    <!-- Additional Attractions -->
+    <string name="tv_tower">برج تلویزیون برلین</string>
+    <string name="holocaust_memorial">بن یادبود هولوکاست</string>
+    <string name="unter_den_linden">خیابان اونتر دن لیندن</string>
+    <string name="kaiser_wilhelm_church">کنیسه قیصر ویلهلم</string>
+    <string name="gropius_bau">موزه گروپیوس‌بائو</string>
+    <string name="tempelhof_airport">فرودگاه تمپلهوف</string>
+    <string name="hackescher_markt">بازار هاکشر</string>
+    <string name="spandau_citadel">قلعه اسپانداو</string>
+    <string name="treptower_park">پارک ترپتاور</string>
+    <string name="east_side_gallery">گالری ساید شرقی</string>
+
     <!-- Brandenburg Gate Content -->
     <string name="brandenburg_gate_title">دروازه براندنبورگ</string>
     <string name="brandenburg_gate_history">دروازه براندنبورگ در سال ۱۷۹۱ تکمیل شد و نماد شهر برلین است. این دروازه تنها دروازه‌ای بود که از دیوار شهر برلین باقی ماند. در طول تاریخ، شاهد رویدادهای مهمی از جمله ورود ناپلئون و فراز و نشیب‌های جنگ سرد بوده است.</string>
@@ -78,6 +90,66 @@
     <string name="berlin_zoo_history">باغ وحش برلین قدیمی‌ترین باغ وحش آلمان است که در سال ۱۸۴۴ تأسیس شد. در جنگ جهانی دوم تقریباً تمام حیوانات از بین رفتند، اما پس از جنگ با دقت بازسازی شد و امروزه یکی از معروف‌ترین باغ‌وحش‌های اروپاست.</string>
     <string name="berlin_zoo_info">موقعیت: غرب مرکز شهر\nآدرس: Hardenbergplatz 8, 10787 Berlin\nساعات بازدید: ۹:۰۰-۱۸:۳۰\nورود: ۱۶ یورو</string>
     <string name="berlin_zoo_tips">بیش از ۲۰,۰۰۰ حیوان در این باغ وحش زندگی می‌کنند\nنکته: آکواریوم مجزا هزینه ورودی جداگانه دارد</string>
+
+    <!-- TV Tower Content -->
+    <string name="tv_tower_title">برج تلویزیون برلین</string>
+    <string name="tv_tower_history">برج تلویزیون برلین در سال ۱۹۶۹ ساخته شد و با ارتفاع ۳۶۸ متر، بلندترین ساختمان آلمان است. این برج در دوران آلمان شرقی به عنوان نماد قدرت فناوری و پیشرفت سوسیالیستی ساخته شد و امروزه یکی از نمادهای اصلی برلین محسوب می‌شود.</string>
+    <string name="tv_tower_info">موقعیت: میدان الکساندر\nآدرس: Panoramastraße 1A, 10178 Berlin\nساعات بازدید: ۹:۰۰-۲۴:۰۰\nورود: ۱۶.۵۰ یورو</string>
+    <string name="tv_tower_tips">از بالای برج منظره‌ای ۳۶۰ درجه از شهر را ببینید\nنکته: رستوران دوار در بالای برج تجربه‌ای منحصر به فرد است</string>
+
+    <!-- Holocaust Memorial Content -->
+    <string name="holocaust_memorial_title">بن یادبود هولوکاست</string>
+    <string name="holocaust_memorial_history">این بن یادبود به یاد یهودیان قربانی هولوکاست در جنگ جهانی دوم ساخته شد و در سال ۲۰۰۵ افتتاح گردید. مجموعه شامل ۲۷۱۱ ستون بتنی است که بازدیدکنندگان را به عبور و تفکر دعوت می‌کند.</string>
+    <string name="holocaust_memorial_info">موقعیت: مرکز شهر\nآدرس: Cora-Berliner-Straße 1, 10117 Berlin\nساعات بازدید: ۲۴ ساعته\nورود: رایگان</string>
+    <string name="holocaust_memorial_tips">موزه زیرزمینی بسیار تأثیرگذار است\nنکته: با احترام و سکوت در میان ستون‌ها راه بروید</string>
+
+    <!-- Unter den Linden Content -->
+    <string name="unter_den_linden_title">خیابان اونتر دن لیندن</string>
+    <string name="unter_den_linden_history">این خیابان معروف در قرن هفدهم به عنوان مسیر سواری پادشاه به قصر شارلوتنبورگ ساخته شد و به خاطر درختان لیندن (نوعی درخت نعناع) نام‌گذاری گردید. این خیابان شاهد رویدادهای تاریخی مهمی بوده و قلب تپنده برلین محسوب می‌شود.</string>
+    <string name="unter_den_linden_info">موقعیت: از دروازه براندنبورگ تا جزیره موزه‌ها\nآدرس: Unter den Linden, 10117 Berlin\nساعات بازدید: ۲۴ ساعته\nورود: رایگان</string>
+    <string name="unter_den_linden_tips">پیاده‌روی در این خیابان تجربه‌ای تاریخی است\nنکته: ساختمان‌های تاریخی و کافه‌های زیبایی در مسیر وجود دارد</string>
+
+    <!-- Kaiser Wilhelm Church Content -->
+    <string name="kaiser_wilhelm_church_title">کنیسه قیصر ویلهلم</string>
+    <string name="kaiser_wilhelm_church_history">این کنیسه در سال ۱۸۹۵ به افتخار قیصر ویلهلم اول ساخته شد و در بمباران‌های جنگ جهانی دوم به شدت آسیب دید. ویرانه‌های آن به عنوان یادبود جنگ حفظ شده و کنیسه جدیدی در کنار آن ساخته شد.</string>
+    <string name="kaiser_wilhelm_church_info">موقعیت: مرکز خرید غرب برلین\nآدرس: Breitscheidplatz, 10789 Berlin\nساعات بازدید: ۹:۰۰-۱۹:۰۰\nورود: رایگان</string>
+    <string name="kaiser_wilhelm_church_tips">شیشه‌های رنگی آبی جدید بسیار زیبا هستند\nنکته: ویرانه‌ها نماد صلح و آشتی هستند</string>
+
+    <!-- Gropius Bau Content -->
+    <string name="gropius_bau_title">موزه گروپیوس‌بائو</string>
+    <string name="gropius_bau_history">این ساختمان در سال ۱۸۸۱ به عنوان موزه هنرهای تزئینی طراحی شد و یکی از مهم‌ترین موزه‌های هنر مدرن برلین است. ساختمان به خاطر معماری زیبا و نمایشگاه‌های هنری متنوع شهرت جهانی دارد.</string>
+    <string name="gropius_bau_info">موقعیت: نزدیک پاسگاه چارلی\nآدرس: Niederkirchnerstraße 7, 10963 Berlin\nساعات بازدید: ۱۰:۰۰-۱۸:۰۰\nورود: بسته به نمایشگاه</string>
+    <string name="gropius_bau_tips">نمایشگاه‌های هنری مدرن و معاصر بسیار عالی هستند\nنکته: فضای باز در مرکز ساختمان برای استراحت مناسب است</string>
+
+    <!-- Tempelhof Airport Content -->
+    <string name="tempelhof_airport_title">فرودگاه تمپلهوف</string>
+    <string name="tempelhof_airport_history">این فرودگاه در سال ۱۹۲۳ ساخته شد و یکی از بزرگ‌ترین فرودگاه‌های اروپا در دوران نازی‌ها بود. پس از جنگ، فرودگاه در محاصره برلین نقش حیاتی داشت و امروزه به عنوان پارک بزرگ شهری استفاده می‌شود.</string>
+    <string name="tempelhof_airport_info">موقعیت: جنوب برلین\nآدرس: Platz der Luftbrücke, 12101 Berlin\nساعات بازدید: ۶:۰۰-غروب\nورود: رایگان</string>
+    <string name="tempelhoff_airport_tips">پارک بسیار بزرگ برای دوچرخه‌سواری و پیاده‌روی عالی است\nنکته: تورهای ساختمان فرودگاه بسیار دیدنی است</string>
+
+    <!-- Hackescher Markt Content -->
+    <string name="hackescher_markt_title">بازار هاکشر</string>
+    <string name="hackescher_market_history">این منطقه در قرن نوزدهم به عنوان مرکز تجاری توسعه یافت و امروزه یکی از پرجنب‌وجوش‌ترین مناطق برلین است. معابر کوچک، کافه‌های هنری و فروشگاه‌های مستقل این منطقه را به محلی محبوب تبدیل کرده‌اند.</string>
+    <string name="hackescher_markt_info">موقعیت: مرکز شرق برلین\nآدرس: Hackescher Markt, 10178 Berlin\nساعات بازدید: ۲۴ ساعته\nورود: رایگان</string>
+    <string name="hackescher_markt_tips">کافه‌ها و رستوران‌های عالی برای نوشیدن قهوه\nنکته: معابر کوچک و ساختمان‌های تاریخی بسیار دیدنی هستند</string>
+
+    <!-- Spandau Citadel Content -->
+    <string name="spandau_citadel_title">قلعه اسپانداو</string>
+    <string name="spandau_citadel_history">این قلعه در قرن شانزدهم ساخته شد و یکی از کامل‌ترین قلعه‌های متوسط در اروپا محسوب می‌شود. قلعه در طول تاریخ آسیب کمی دیده و امروزه میزبان موزه‌ها و رویدادهای فرهنگی است.</string>
+    <string name="spandau_citadel_info">موقعیت: غرب برلین\nآدرس: Am Juliusturm 64, 13599 Berlin\nساعات بازدید: ۱۰:۰۰-۱۷:۰۰\nورود: ۵.۵۰ یورو</string>
+    <string name="spandau_citadel_tips">برترین مناظر شهر را از بالای قلعه ببینید\nنکته: در تابستان کنسرت‌های در فضای باز برگزار می‌شود</string>
+
+    <!-- Treptower Park Content -->
+    <string name="treptower_park_title">پارک ترپتاور</string>
+    <string name="treptower_park_history">این پارک در قرن نوزدهم به عنوان فضای سبز تفریحی ساخته شد و بن یادبود جنگ شوروی در آن قرار دارد. پارک در کنار رود اسپری و برای پیاده‌روی، دوچرخه‌سواری و تفریحات آبی بسیار مناسب است.</string>
+    <string name="treptower_park_info">موقعیت: شرق برلین\nآدرس: Am Treptower Park, 12435 Berlin\nساعات بازدید: ۲۴ ساعته\nورود: رایگان</string>
+    <string name="treptower_park_tips">بن یادبود جنگ بسیار باشکوه است\nنکته: قایقرانی در رود اسپری لذت‌بخش است</string>
+
+    <!-- East Side Gallery Content -->
+    <string name="east_side_gallery_title">گالری ساید شرقی</string>
+    <string name="east_side_gallery_history">این گالری در سال ۱۹۹۰ توسط هنرمندان بین‌المللی بر روی دیوار برلین ایجاد شد و طولانی‌ترین بخش باقی‌مانده دیوار است. نقاشی‌های دیواری نماد امید، آزادی و اتحاد آلمان هستند.</string>
+    <string name="east_side_gallery_info">موقعیت: شرق رود اسپری\nآدرس: Mühlenstraße, 10243 Berlin\nساعات بازدید: ۲۴ ساعته\nورود: رایگان</string>
+    <string name="east_side_gallery_tips">هنر خیابانی بسیار خلاقانه و معنادار\nنکته: بهتر است در صبح زود بازدید کنید تا شلوغ نباشد</string>
 
     <!-- Common UI Strings -->
     <string name="back">بازگشت</string>
