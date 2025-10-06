@@ -55,12 +55,8 @@ public class PlaceFragment extends Fragment {
         TextView infoText = view.findViewById(R.id.tv_info);
         TextView tipsText = view.findViewById(R.id.tv_tips);
         ImageView imageView = view.findViewById(R.id.iv_place);
-
-        // Test with hardcoded content first
-        titleText.setText("Test Title: " + placeIndex);
-        historyText.setText("This is test history content for place " + placeIndex);
-        infoText.setText("This is test info content for place " + placeIndex);
-        tipsText.setText("This is test tips content for place " + placeIndex);
+        TextView imageNameText = view.findViewById(R.id.tv_image_name);
+        TextView originalNameText = view.findViewById(R.id.tv_original_name);
 
         // Try to load actual content
         PlaceData.PlaceContent placeContent = PlaceData.getPlace(placeIndex, requireContext());
@@ -70,13 +66,69 @@ public class PlaceFragment extends Fragment {
             historyText.setText(placeContent.history);
             infoText.setText(placeContent.info);
             tipsText.setText(placeContent.tips);
-            imageView.setImageResource(R.drawable.ic_launcher_foreground); // Default placeholder
+
+            // Display image information
+            imageNameText.setText(getString(R.string.image_label) + " " + placeContent.imageName);
+            originalNameText.setText(getString(R.string.original_name_label) + " " + placeContent.originalName);
+
+            // Make image info visible
+            imageNameText.setVisibility(View.VISIBLE);
+            originalNameText.setVisibility(View.VISIBLE);
+
+            // Try to load image with error handling
+            loadImageWithFallback(imageView, placeContent.imageName);
 
             // Debug logging
             android.util.Log.d("PlaceFragment", "Loaded place " + placeIndex + ": " + placeContent.title);
         } else {
             android.util.Log.e("PlaceFragment", "Failed to load place content for index: " + placeIndex);
-            // Keep the test content if real content fails
+            // Show error message
+            titleText.setText(getString(R.string.error_loading_content));
+            historyText.setText(getString(R.string.error_content_unavailable));
+            infoText.setText(getString(R.string.error_try_again));
+            tipsText.setText("");
+
+            // Hide image info on error
+            imageNameText.setVisibility(View.GONE);
+            originalNameText.setVisibility(View.GONE);
+
+            // Show default placeholder
+            imageView.setImageResource(R.drawable.ic_launcher_foreground);
         }
+    }
+
+    private void loadImageWithFallback(ImageView imageView, String imageName) {
+        try {
+            // Try to get image resource by name
+            int imageResourceId = getResourceIdByName(imageName);
+            if (imageResourceId != 0) {
+                imageView.setImageResource(imageResourceId);
+                android.util.Log.d("PlaceFragment", "Successfully loaded image: " + imageName);
+            } else {
+                // Image not found, use placeholder
+                showImagePlaceholder(imageView, imageName);
+            }
+        } catch (Exception e) {
+            android.util.Log.e("PlaceFragment", "Error loading image: " + imageName, e);
+            showImagePlaceholder(imageView, imageName);
+        }
+    }
+
+    private void showImagePlaceholder(ImageView imageView, String imageName) {
+        // Use default launcher icon as placeholder
+        imageView.setImageResource(R.drawable.ic_launcher_foreground);
+        android.util.Log.w("PlaceFragment", "Image not found: " + imageName + ", using placeholder");
+    }
+
+    private int getResourceIdByName(String imageName) {
+        // Remove file extension if present
+        String resourceName = imageName.contains(".") ?
+            imageName.substring(0, imageName.lastIndexOf('.')) : imageName;
+
+        return requireContext().getResources().getIdentifier(
+            resourceName,
+            "drawable",
+            requireContext().getPackageName()
+        );
     }
 }

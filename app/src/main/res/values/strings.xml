@@ -187,5 +187,32 @@
     <string name="contact_info">اطلاعات تماس</string>
     <string name="contact_details">برای ارسال نظرات، پیشنهادات و گزارش مشکلات می‌توانید از طریق ایمیل با ما در ارتباط باشید. نظرات شما به بهبود برنامه کمک می‌کند.</string>
     <string name="place_image">تصویر مکان</string>
+    <string name="error_loading_content">خطا در بارگذاری اطلاعات</string>
+    <string name="error_content_unavailable">متأسفیم، اطلاعات این مکان در دسترس نیست.</string>
+    <string name="error_try_again">لطفاً بعداً دوباره تلاش کنید.</string>
+    <string name="image_label">تصویر:</string>
+    <string name="original_name_label">نام اصلی:</string>
+
+    <!-- Original Place Names -->
+    <string name="brandenburg_gate_original">Brandenburg Gate</string>
+    <string name="berlin_wall_original">Berlin Wall</string>
+    <string name="reichstag_original">Reichstag Building</string>
+    <string name="museum_island_original">Museum Island</string>
+    <string name="charlottenburg_palace_original">Charlottenburg Palace</string>
+    <string name="berlin_cathedral_original">Berlin Cathedral</string>
+    <string name="alexanderplatz_original">Alexanderplatz</string>
+    <string name="potsdamer_platz_original">Potsdamer Platz</string>
+    <string name="checkpoint_charlie_original">Checkpoint Charlie</string>
+    <string name="berlin_zoo_original">Berlin Zoo</string>
+    <string name="tv_tower_original">TV Tower</string>
+    <string name="holocaust_memorial_original">Holocaust Memorial</string>
+    <string name="unter_den_linden_original">Unter den Linden</string>
+    <string name="kaiser_wilhelm_church_original">Kaiser Wilhelm Church</string>
+    <string name="gropius_bau_original">Gropius Bau</string>
+    <string name="tempelhof_airport_original">Tempelhof Airport</string>
+    <string name="hackescher_markt_original">Hackescher Markt</string>
+    <string name="spandau_citadel_original">Spandau Citadel</string>
+    <string name="treptower_park_original">Treptower Park</string>
+    <string name="east_side_gallery_original">East Side Gallery</string>
 
 </resources>

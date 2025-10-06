@@ -9,12 +9,16 @@ public class PlaceData {
         public String history;
         public String info;
         public String tips;
+        public String imageName;
+        public String originalName;
 
-        public PlaceContent(String title, String history, String info, String tips) {
+        public PlaceContent(String title, String history, String info, String tips, String imageName, String originalName) {
             this.title = title;
             this.history = history;
             this.info = info;
             this.tips = tips;
+            this.imageName = imageName;
+            this.originalName = originalName;
         }
     }
 
@@ -26,140 +30,180 @@ public class PlaceData {
                     context.getString(R.string.brandenburg_gate),
                     context.getString(R.string.brandenburg_gate_history),
                     context.getString(R.string.brandenburg_gate_info),
-                    context.getString(R.string.brandenburg_gate_tips)
+                    context.getString(R.string.brandenburg_gate_tips),
+                    "brandenburg_gate.jpg",
+                    context.getString(R.string.brandenburg_gate_original)
                 );
             case 1:
                 return new PlaceContent(
                     context.getString(R.string.berlin_wall),
                     context.getString(R.string.berlin_wall_history),
                     context.getString(R.string.berlin_wall_info),
-                    context.getString(R.string.berlin_wall_tips)
+                    context.getString(R.string.berlin_wall_tips),
+                    "berlin_wall.jpg",
+                    context.getString(R.string.berlin_wall_original)
                 );
             case 2:
                 return new PlaceContent(
                     context.getString(R.string.reichstag),
                     context.getString(R.string.reichstag_history),
                     context.getString(R.string.reichstag_info),
-                    context.getString(R.string.reichstag_tips)
+                    context.getString(R.string.reichstag_tips),
+                    "reichstag.jpg",
+                    context.getString(R.string.reichstag_original)
                 );
             case 3:
                 return new PlaceContent(
                     context.getString(R.string.museum_island),
                     context.getString(R.string.museum_island_history),
                     context.getString(R.string.museum_island_info),
-                    context.getString(R.string.museum_island_tips)
+                    context.getString(R.string.museum_island_tips),
+                    "museum_island.jpg",
+                    context.getString(R.string.museum_island_original)
                 );
             case 4:
                 return new PlaceContent(
                     context.getString(R.string.charlottenburg_palace),
                     context.getString(R.string.charlottenburg_palace_history),
                     context.getString(R.string.charlottenburg_palace_info),
-                    context.getString(R.string.charlottenburg_palace_tips)
+                    context.getString(R.string.charlottenburg_palace_tips),
+                    "charlottenburg_palace.jpg",
+                    context.getString(R.string.charlottenburg_palace_original)
                 );
             case 5:
                 return new PlaceContent(
                     context.getString(R.string.berlin_cathedral),
                     context.getString(R.string.berlin_cathedral_history),
                     context.getString(R.string.berlin_cathedral_info),
-                    context.getString(R.string.berlin_cathedral_tips)
+                    context.getString(R.string.berlin_cathedral_tips),
+                    "berlin_cathedral.jpg",
+                    context.getString(R.string.berlin_cathedral_original)
                 );
             case 6:
                 return new PlaceContent(
                     context.getString(R.string.alexanderplatz),
                     context.getString(R.string.alexanderplatz_history),
                     context.getString(R.string.alexanderplatz_info),
-                    context.getString(R.string.alexanderplatz_tips)
+                    context.getString(R.string.alexanderplatz_tips),
+                    "alexanderplatz.jpg",
+                    context.getString(R.string.alexanderplatz_original)
                 );
             case 7:
                 return new PlaceContent(
                     context.getString(R.string.potzdamer_platz),
                     context.getString(R.string.potzdamer_platz_history),
                     context.getString(R.string.potzdamer_platz_info),
-                    context.getString(R.string.potzdamer_platz_tips)
+                    context.getString(R.string.potzdamer_platz_tips),
+                    "potsdamer_platz.jpg",
+                    context.getString(R.string.potsdamer_platz_original)
                 );
             case 8:
                 return new PlaceContent(
                     context.getString(R.string.checkpoint_charlie),
                     context.getString(R.string.checkpoint_charlie_history),
                     context.getString(R.string.checkpoint_charlie_info),
-                    context.getString(R.string.checkpoint_charlie_tips)
+                    context.getString(R.string.checkpoint_charlie_tips),
+                    "checkpoint_charlie.jpg",
+                    context.getString(R.string.checkpoint_charlie_original)
                 );
             case 9:
                 return new PlaceContent(
                     context.getString(R.string.berlin_zoo),
                     context.getString(R.string.berlin_zoo_history),
                     context.getString(R.string.berlin_zoo_info),
-                    context.getString(R.string.berlin_zoo_tips)
+                    context.getString(R.string.berlin_zoo_tips),
+                    "berlin_zoo.jpg",
+                    context.getString(R.string.berlin_zoo_original)
                 );
             case 10:
                 return new PlaceContent(
                     context.getString(R.string.tv_tower),
                     context.getString(R.string.tv_tower_history),
                     context.getString(R.string.tv_tower_info),
-                    context.getString(R.string.tv_tower_tips)
+                    context.getString(R.string.tv_tower_tips),
+                    "tv_tower.jpg",
+                    context.getString(R.string.tv_tower_original)
                 );
             case 11:
                 return new PlaceContent(
                     context.getString(R.string.holocaust_memorial),
                     context.getString(R.string.holocaust_memorial_history),
                     context.getString(R.string.holocaust_memorial_info),
-                    context.getString(R.string.holocaust_memorial_tips)
+                    context.getString(R.string.holocaust_memorial_tips),
+                    "holocaust_memorial.jpg",
+                    context.getString(R.string.holocaust_memorial_original)
                 );
             case 12:
                 return new PlaceContent(
                     context.getString(R.string.unter_den_linden),
                     context.getString(R.string.unter_den_linden_history),
                     context.getString(R.string.unter_den_linden_info),
-                    context.getString(R.string.unter_den_linden_tips)
+                    context.getString(R.string.unter_den_linden_tips),
+                    "unter_den_linden.jpg",
+                    context.getString(R.string.unter_den_linden_original)
                 );
             case 13:
                 return new PlaceContent(
                     context.getString(R.string.kaiser_wilhelm_church),
                     context.getString(R.string.kaiser_wilhelm_church_history),
                     context.getString(R.string.kaiser_wilhelm_church_info),
-                    context.getString(R.string.kaiser_wilhelm_church_tips)
+                    context.getString(R.string.kaiser_wilhelm_church_tips),
+                    "kaiser_wilhelm_church.jpg",
+                    context.getString(R.string.kaiser_wilhelm_church_original)
                 );
             case 14:
                 return new PlaceContent(
                     context.getString(R.string.gropius_bau),
                     context.getString(R.string.gropius_bau_history),
                     context.getString(R.string.gropius_bau_info),
-                    context.getString(R.string.gropius_bau_tips)
+                    context.getString(R.string.gropius_bau_tips),
+                    "gropius_bau.jpg",
+                    context.getString(R.string.gropius_bau_original)
                 );
             case 15:
                 return new PlaceContent(
                     context.getString(R.string.tempelhof_airport),
                     context.getString(R.string.tempelhof_airport_history),
                     context.getString(R.string.tempelhof_airport_info),
-                    context.getString(R.string.tempelhof_airport_tips)
+                    context.getString(R.string.tempelhof_airport_tips),
+                    "tempelhof_airport.jpg",
+                    context.getString(R.string.tempelhof_airport_original)
                 );
             case 16:
                 return new PlaceContent(
                     context.getString(R.string.hackescher_markt),
                     context.getString(R.string.hackescher_markt_history),
                     context.getString(R.string.hackescher_markt_info),
-                    context.getString(R.string.hackescher_markt_tips)
+                    context.getString(R.string.hackescher_markt_tips),
+                    "hackescher_markt.jpg",
+                    context.getString(R.string.hackescher_markt_original)
                 );
             case 17:
                 return new PlaceContent(
                     context.getString(R.string.spandau_citadel),
                     context.getString(R.string.spandau_citadel_history),
                     context.getString(R.string.spandau_citadel_info),
-                    context.getString(R.string.spandau_citadel_tips)
+                    context.getString(R.string.spandau_citadel_tips),
+                    "spandau_citadel.jpg",
+                    context.getString(R.string.spandau_citadel_original)
                 );
             case 18:
                 return new PlaceContent(
                     context.getString(R.string.treptower_park),
                     context.getString(R.string.treptower_park_history),
                     context.getString(R.string.treptower_park_info),
-                    context.getString(R.string.treptower_park_tips)
+                    context.getString(R.string.treptower_park_tips),
+                    "treptower_park.jpg",
+                    context.getString(R.string.treptower_park_original)
                 );
             case 19:
                 return new PlaceContent(
                     context.getString(R.string.east_side_gallery),
                     context.getString(R.string.east_side_gallery_history),
                     context.getString(R.string.east_side_gallery_info),
-                    context.getString(R.string.east_side_gallery_tips)
+                    context.getString(R.string.east_side_gallery_tips),
+                    "east_side_gallery.jpg",
+                    context.getString(R.string.east_side_gallery_original)
                 );
             default:
                 return null;
