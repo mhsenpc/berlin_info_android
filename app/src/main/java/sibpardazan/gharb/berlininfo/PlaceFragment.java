@@ -55,7 +55,6 @@ public class PlaceFragment extends Fragment {
         TextView infoText = view.findViewById(R.id.tv_info);
         TextView tipsText = view.findViewById(R.id.tv_tips);
         ImageView imageView = view.findViewById(R.id.iv_place);
-        TextView imageNameText = view.findViewById(R.id.tv_image_name);
         TextView originalNameText = view.findViewById(R.id.tv_original_name);
 
         // Try to load actual content
@@ -68,11 +67,9 @@ public class PlaceFragment extends Fragment {
             tipsText.setText(placeContent.tips);
 
             // Display image information
-            imageNameText.setText(getString(R.string.image_label) + " " + placeContent.imageName);
             originalNameText.setText(getString(R.string.original_name_label) + " " + placeContent.originalName);
 
             // Make image info visible
-            imageNameText.setVisibility(View.VISIBLE);
             originalNameText.setVisibility(View.VISIBLE);
 
             // Try to load image with error handling
@@ -89,7 +86,6 @@ public class PlaceFragment extends Fragment {
             tipsText.setText("");
 
             // Hide image info on error
-            imageNameText.setVisibility(View.GONE);
             originalNameText.setVisibility(View.GONE);
 
             // Show default placeholder
