@@ -31,7 +31,7 @@ public class PlaceData {
                     context.getString(R.string.brandenburg_gate_history),
                     context.getString(R.string.brandenburg_gate_info),
                     context.getString(R.string.brandenburg_gate_tips),
-                    "brandenburg_gate.jpg",
+                    "brandenburg_gate.png",
                     context.getString(R.string.brandenburg_gate_original)
                 );
             case 1:
@@ -40,7 +40,7 @@ public class PlaceData {
                     context.getString(R.string.berlin_wall_history),
                     context.getString(R.string.berlin_wall_info),
                     context.getString(R.string.berlin_wall_tips),
-                    "berlin_wall.jpg",
+                    "berlin_wall.png",
                     context.getString(R.string.berlin_wall_original)
                 );
             case 2:
@@ -49,7 +49,7 @@ public class PlaceData {
                     context.getString(R.string.reichstag_history),
                     context.getString(R.string.reichstag_info),
                     context.getString(R.string.reichstag_tips),
-                    "reichstag.jpg",
+                    "reichstag.png",
                     context.getString(R.string.reichstag_original)
                 );
             case 3:
@@ -58,7 +58,7 @@ public class PlaceData {
                     context.getString(R.string.museum_island_history),
                     context.getString(R.string.museum_island_info),
                     context.getString(R.string.museum_island_tips),
-                    "museum_island.jpg",
+                    "museum_island.png",
                     context.getString(R.string.museum_island_original)
                 );
             case 4:
@@ -67,7 +67,7 @@ public class PlaceData {
                     context.getString(R.string.charlottenburg_palace_history),
                     context.getString(R.string.charlottenburg_palace_info),
                     context.getString(R.string.charlottenburg_palace_tips),
-                    "charlottenburg_palace.jpg",
+                    "charlottenburg_palace.png",
                     context.getString(R.string.charlottenburg_palace_original)
                 );
             case 5:
@@ -76,7 +76,7 @@ public class PlaceData {
                     context.getString(R.string.berlin_cathedral_history),
                     context.getString(R.string.berlin_cathedral_info),
                     context.getString(R.string.berlin_cathedral_tips),
-                    "berlin_cathedral.jpg",
+                    "berlin_cathedral.png",
                     context.getString(R.string.berlin_cathedral_original)
                 );
             case 6:
@@ -85,7 +85,7 @@ public class PlaceData {
                     context.getString(R.string.alexanderplatz_history),
                     context.getString(R.string.alexanderplatz_info),
                     context.getString(R.string.alexanderplatz_tips),
-                    "alexanderplatz.jpg",
+                    "alexanderplatz.png",
                     context.getString(R.string.alexanderplatz_original)
                 );
             case 7:
@@ -94,7 +94,7 @@ public class PlaceData {
                     context.getString(R.string.potzdamer_platz_history),
                     context.getString(R.string.potzdamer_platz_info),
                     context.getString(R.string.potzdamer_platz_tips),
-                    "potsdamer_platz.jpg",
+                    "potsdamer_platz.png",
                     context.getString(R.string.potsdamer_platz_original)
                 );
             case 8:
@@ -103,7 +103,7 @@ public class PlaceData {
                     context.getString(R.string.checkpoint_charlie_history),
                     context.getString(R.string.checkpoint_charlie_info),
                     context.getString(R.string.checkpoint_charlie_tips),
-                    "checkpoint_charlie.jpg",
+                    "checkpoint_charlie.png",
                     context.getString(R.string.checkpoint_charlie_original)
                 );
             case 9:
@@ -112,7 +112,7 @@ public class PlaceData {
                     context.getString(R.string.berlin_zoo_history),
                     context.getString(R.string.berlin_zoo_info),
                     context.getString(R.string.berlin_zoo_tips),
-                    "berlin_zoo.jpg",
+                    "berlin_zoo.png",
                     context.getString(R.string.berlin_zoo_original)
                 );
             case 10:
@@ -121,7 +121,7 @@ public class PlaceData {
                     context.getString(R.string.tv_tower_history),
                     context.getString(R.string.tv_tower_info),
                     context.getString(R.string.tv_tower_tips),
-                    "tv_tower.jpg",
+                    "tv_tower.png",
                     context.getString(R.string.tv_tower_original)
                 );
             case 11:
@@ -130,7 +130,7 @@ public class PlaceData {
                     context.getString(R.string.holocaust_memorial_history),
                     context.getString(R.string.holocaust_memorial_info),
                     context.getString(R.string.holocaust_memorial_tips),
-                    "holocaust_memorial.jpg",
+                    "holocaust_memorial.png",
                     context.getString(R.string.holocaust_memorial_original)
                 );
             case 12:
@@ -139,7 +139,7 @@ public class PlaceData {
                     context.getString(R.string.unter_den_linden_history),
                     context.getString(R.string.unter_den_linden_info),
                     context.getString(R.string.unter_den_linden_tips),
-                    "unter_den_linden.jpg",
+                    "unter_den_linden.png",
                     context.getString(R.string.unter_den_linden_original)
                 );
             case 13:
@@ -148,7 +148,7 @@ public class PlaceData {
                     context.getString(R.string.kaiser_wilhelm_church_history),
                     context.getString(R.string.kaiser_wilhelm_church_info),
                     context.getString(R.string.kaiser_wilhelm_church_tips),
-                    "kaiser_wilhelm_church.jpg",
+                    "kaiser_wilhelm_church.png",
                     context.getString(R.string.kaiser_wilhelm_church_original)
                 );
             case 14:
@@ -157,7 +157,7 @@ public class PlaceData {
                     context.getString(R.string.gropius_bau_history),
                     context.getString(R.string.gropius_bau_info),
                     context.getString(R.string.gropius_bau_tips),
-                    "gropius_bau.jpg",
+                    "gropius_bau.png",
                     context.getString(R.string.gropius_bau_original)
                 );
             case 15:
@@ -166,7 +166,7 @@ public class PlaceData {
                     context.getString(R.string.tempelhof_airport_history),
                     context.getString(R.string.tempelhof_airport_info),
                     context.getString(R.string.tempelhof_airport_tips),
-                    "tempelhof_airport.jpg",
+                    "tempelhof_airport.png",
                     context.getString(R.string.tempelhof_airport_original)
                 );
             case 16:
@@ -175,7 +175,7 @@ public class PlaceData {
                     context.getString(R.string.hackescher_markt_history),
                     context.getString(R.string.hackescher_markt_info),
                     context.getString(R.string.hackescher_markt_tips),
-                    "hackescher_markt.jpg",
+                    "hackescher_markt.png",
                     context.getString(R.string.hackescher_markt_original)
                 );
             case 17:
@@ -184,7 +184,7 @@ public class PlaceData {
                     context.getString(R.string.spandau_citadel_history),
                     context.getString(R.string.spandau_citadel_info),
                     context.getString(R.string.spandau_citadel_tips),
-                    "spandau_citadel.jpg",
+                    "spandau_citadel.png",
                     context.getString(R.string.spandau_citadel_original)
                 );
             case 18:
@@ -193,7 +193,7 @@ public class PlaceData {
                     context.getString(R.string.treptower_park_history),
                     context.getString(R.string.treptower_park_info),
                     context.getString(R.string.treptower_park_tips),
-                    "treptower_park.jpg",
+                    "treptower_park.png",
                     context.getString(R.string.treptower_park_original)
                 );
             case 19:
@@ -202,7 +202,7 @@ public class PlaceData {
                     context.getString(R.string.east_side_gallery_history),
                     context.getString(R.string.east_side_gallery_info),
                     context.getString(R.string.east_side_gallery_tips),
-                    "east_side_gallery.jpg",
+                    "east_side_gallery.png",
                     context.getString(R.string.east_side_gallery_original)
                 );
             default:
