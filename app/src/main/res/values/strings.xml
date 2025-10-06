@@ -183,10 +183,12 @@
     <string name="features">ویژگی‌های برنامه</string>
     <string name="features_list">• اطلاعات کامل ۲۰ مکان تاریخی و گردشگری برلین\n• تاریخچه غنی هر مکان به زبان فارسی\n• اطلاعات بازدید و آدرس دقیق\n• نکات مفید برای بازدید بهتر\n• رابط کاربری ساده و زیبا\n• پشتیبانی کامل از زبان فارسی</string>
     <string name="developer_info">توسعه‌دهنده</string>
-    <string name="developer_details">این برنامه با هدف آشنایی گردشگران فارسی‌زبان با جاذبه‌های تاریخی برلین طراحی شده است. تمامی محتوا به زبان فارسی ارائه شده تا بازدید از این شهر زیبا برای شما آسان‌تر و لذت‌بخش‌تر باشد.</string>
+    <string name="developer_name">محسن شامحمدی</string>
+    <string name="developer_details">محسن شامحمدی\n\nاین برنامه با هدف آشنایی گردشگران فارسی‌زبان با جاذبه‌های تاریخی برلین طراحی شده است. تمامی محتوا به زبان فارسی ارائه شده تا بازدید از این شهر زیبا برای شما آسان‌تر و لذت‌بخش‌تر باشد.</string>
     <string name="contact_info">اطلاعات تماس</string>
-    <string name="contact_details">برای ارسال نظرات، پیشنهادات و گزارش مشکلات می‌توانید از طریق ایمیل با ما در ارتباط باشید. نظرات شما به بهبود برنامه کمک می‌کند.</string>
+    <string name="contact_details">ایمیل: mhsenpc@gmail.com\n\nبرای ارسال نظرات، پیشنهادات و گزارش مشکلات می‌توانید از طریق ایمیل با ما در ارتباط باشید. نظرات شما به بهبود برنامه کمک می‌کند.</string>
     <string name="place_image">تصویر مکان</string>
+    <string name="developer_image">تصویر توسعه‌دهنده</string>
     <string name="error_loading_content">خطا در بارگذاری اطلاعات</string>
     <string name="error_content_unavailable">متأسفیم، اطلاعات این مکان در دسترس نیست.</string>
     <string name="error_try_again">لطفاً بعداً دوباره تلاش کنید.</string>
