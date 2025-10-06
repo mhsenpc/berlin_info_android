@@ -217,4 +217,12 @@
     <string name="treptower_park_original">Treptower Park</string>
     <string name="east_side_gallery_original">East Side Gallery</string>
 
+    <!-- Bookmark Strings -->
+    <string name="bookmark_place">نشانکذاری مکان</string>
+    <string name="remove_bookmark">حذف نشانکذاری</string>
+    <string name="bookmarks">نشانکذاری‌ها</string>
+    <string name="no_bookmarks">هنوز هیچ مکانی را نشانکذاری نکرده‌اید</string>
+    <string name="tap_star_to_bookmark">برای نشانکذاری روی ستاره ضربه بزنید</string>
+    <string name="add_bookmark">افزودن نشانکذاری</string>
+
 </resources>

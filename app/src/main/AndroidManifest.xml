@@ -29,6 +29,12 @@
             android:parentActivityName=".MainActivity"
             android:theme="@style/Theme.BerlinInfo" />
 
+        <activity
+            android:name=".BookmarksActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.BerlinInfo" />
+
     </application>
 
 </manifest>

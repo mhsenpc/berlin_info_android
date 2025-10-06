@@ -210,6 +210,33 @@ public class PlaceData {
         }
     }
 
+    public static String[] getAllPlaceNames(Context context) {
+        String[] placeNames = new String[getPlaceCount()];
+
+        placeNames[0] = context.getString(R.string.brandenburg_gate);
+        placeNames[1] = context.getString(R.string.berlin_wall);
+        placeNames[2] = context.getString(R.string.reichstag);
+        placeNames[3] = context.getString(R.string.museum_island);
+        placeNames[4] = context.getString(R.string.charlottenburg_palace);
+        placeNames[5] = context.getString(R.string.berlin_cathedral);
+        placeNames[6] = context.getString(R.string.alexanderplatz);
+        placeNames[7] = context.getString(R.string.potzdamer_platz);
+        placeNames[8] = context.getString(R.string.checkpoint_charlie);
+        placeNames[9] = context.getString(R.string.berlin_zoo);
+        placeNames[10] = context.getString(R.string.tv_tower);
+        placeNames[11] = context.getString(R.string.holocaust_memorial);
+        placeNames[12] = context.getString(R.string.unter_den_linden);
+        placeNames[13] = context.getString(R.string.kaiser_wilhelm_church);
+        placeNames[14] = context.getString(R.string.gropius_bau);
+        placeNames[15] = context.getString(R.string.tempelhof_airport);
+        placeNames[16] = context.getString(R.string.hackescher_markt);
+        placeNames[17] = context.getString(R.string.spandau_citadel);
+        placeNames[18] = context.getString(R.string.treptower_park);
+        placeNames[19] = context.getString(R.string.east_side_gallery);
+
+        return placeNames;
+    }
+
     public static int getPlaceCount() {
         return 20;
     }
