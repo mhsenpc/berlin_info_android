@@ -225,4 +225,10 @@
     <string name="tap_star_to_bookmark">برای نشانکذاری روی ستاره ضربه بزنید</string>
     <string name="add_bookmark">افزودن نشانکذاری</string>
 
+    <!-- References Screen Strings -->
+    <string name="references_title">منابع و مراجع</string>
+    <string name="references">منابع</string>
+    <string name="references_description">لیست منابع و مراجع مفید برای اطلاعات بیشتر</string>
+    <string name="error_no_browser">مرورگر وب یافت نشد</string>
+
 </resources>

@@ -139,6 +139,9 @@ public class MainActivity extends AppCompatActivity {
         } else if (item.getItemId() == R.id.action_bookmarks) {
             startActivity(new Intent(MainActivity.this, BookmarksActivity.class));
             return true;
+        } else if (item.getItemId() == R.id.action_references) {
+            startActivity(new Intent(MainActivity.this, ReferencesActivity.class));
+            return true;
         } else if (item.getItemId() == R.id.action_about) {
             startActivity(new Intent(MainActivity.this, AboutActivity.class));
             return true;
