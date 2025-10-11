@@ -120,7 +120,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_bookmark_toggle) {
+        if (item.getItemId() == R.id.action_search) {
+            startActivity(new Intent(MainActivity.this, SearchActivity.class));
+            return true;
+        } else if (item.getItemId() == R.id.action_bookmark_toggle) {
             // Toggle bookmark for current place
             int currentPosition = viewPager.getCurrentItem();
             bookmarkManager.toggleBookmark(currentPosition);
